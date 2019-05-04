@@ -25,6 +25,9 @@ AriaDebugVC14.lib
 ```
 
 
+target_link_libraries() ??? to do the below?
+
+
 - Select ‘VC++ Directories’ under ‘Configuration Properties’.
 - Next, you’ll see the following list:
   - Executable Directories
