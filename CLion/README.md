@@ -1,10 +1,29 @@
 - Note the directory where Aria was installed (usually, C:/Program Files/MobileRobots).
-- From the ‘Software’ blackboard page, download the ‘Lab Aria Files’. This downloads a zip called ‘lab2_aria.zip’. Extract this to your workspace.
 - Open MobileSim, and load the map you’ve downloaded. Keep this program open.
-- Open Visual Studio and load the ‘lab2_aria.sln’ solution file from the zip you’ve just extracted.
+- Open CLion
 - (If you try and ‘Build’ this solution, then you’ll get two errors saying that it ‘Cannot open include file: ‘Aria.h’’)
 - What we’re doing here is to find and link the Aria files to the project.
-- Right click on ‘lab2_aria’ below the ‘Solution ‘lab2_aria’’ line, then select ‘Properties’
+- Go to CMakeLists.txt
+
+Based on Visual Studio setup I had the following:
+
+`C++ -> General -> Additional Include directories:
+
+C:\Program Files\MobileRobots\Aria
+C:\Program Files\MobileRobots\Aria\include
+C:\Program Files\MobileRobots\Aria\bin64
+C:\Program Files\MobileRobots\Aria\lib64
+
+
+Linker -> General -> Additional library directories: 
+
+C:\Program Files\MobileRobots\Aria\lib64
+
+Linker -> Input -> Additional dependencies:
+
+AriaDebugVC14.lib`
+
+
 - Select ‘VC++ Directories’ under ‘Configuration Properties’.
 - Next, you’ll see the following list:
   - Executable Directories
