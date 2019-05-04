@@ -1,0 +1,4 @@
+# AriaBaseProject
+
+
+NOTE THIS IS SET UP FOR 64 BIT AND 'NOT' 32 BIT!
