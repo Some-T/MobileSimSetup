@@ -6,22 +6,23 @@
 - Go to CMakeLists.txt
 
 Based on Visual Studio setup I had the following:
+```
+C++ -> General -> Additional Include directories:
 
-  C++ -> General -> Additional Include directories:
-
-  C:\Program Files\MobileRobots\Aria
-  C:\Program Files\MobileRobots\Aria\include
-  C:\Program Files\MobileRobots\Aria\bin64
-  C:\Program Files\MobileRobots\Aria\lib64
+C:\Program Files\MobileRobots\Aria
+C:\Program Files\MobileRobots\Aria\include
+C:\Program Files\MobileRobots\Aria\bin64
+C:\Program Files\MobileRobots\Aria\lib64
 
 
-  Linker -> General -> Additional library directories: 
+Linker -> General -> Additional library directories: 
 
-  C:\Program Files\MobileRobots\Aria\lib64
+C:\Program Files\MobileRobots\Aria\lib64
 
-  Linker -> Input -> Additional dependencies:
+Linker -> Input -> Additional dependencies:
 
-  AriaDebugVC14.lib
+AriaDebugVC14.lib
+```
 
 
 - Select ‘VC++ Directories’ under ‘Configuration Properties’.
