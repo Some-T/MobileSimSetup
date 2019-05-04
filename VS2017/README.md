@@ -1,4 +1,4 @@
-- Download and install Visual Studio 2017 through MSDNAA, you’ll need to select and install the C++ Tools using the Visual Studio Installer.
+- Download and install Visual Studio 2017 through MSDNAA ( https://aka.ms/devtoolsforteaching - sign in with University credentials.), you’ll need to select and install the C++ Tools using the Visual Studio Installer.
 - Download the ‘Aria, MobileSim and Mapper3 Software Bundle’ and install all.
 - Download a Map from Blackboard (top of the ‘Learning Materials’ page).
 - Note the directory where Aria was installed (usually, C:/Program Files/MobileRobots).
