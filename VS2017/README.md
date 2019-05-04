@@ -1,3 +1,5 @@
+This is mainly set up for 64 bit only!
+
 - Download and install Visual Studio 2017 through MSDNAA ( https://aka.ms/devtoolsforteaching - sign in with University credentials.), you’ll need to select and install the C++ Tools using the Visual Studio Installer.
 - Download the ‘Aria, MobileSim and Mapper3 Software Bundle’ and install all.
 - Download a Map from Blackboard (top of the ‘Learning Materials’ page).

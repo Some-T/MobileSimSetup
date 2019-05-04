@@ -1,0 +1,26 @@
+- Note the directory where Aria was installed (usually, C:/Program Files/MobileRobots).
+- From the ‘Software’ blackboard page, download the ‘Lab Aria Files’. This downloads a zip called ‘lab2_aria.zip’. Extract this to your workspace.
+- Open MobileSim, and load the map you’ve downloaded. Keep this program open.
+- Open Visual Studio and load the ‘lab2_aria.sln’ solution file from the zip you’ve just extracted.
+- (If you try and ‘Build’ this solution, then you’ll get two errors saying that it ‘Cannot open include file: ‘Aria.h’’)
+- What we’re doing here is to find and link the Aria files to the project.
+- Right click on ‘lab2_aria’ below the ‘Solution ‘lab2_aria’’ line, then select ‘Properties’
+- Select ‘VC++ Directories’ under ‘Configuration Properties’.
+- Next, you’ll see the following list:
+  - Executable Directories
+  - Include Directories
+  - …
+  - Exclude Directories
+- Note that for 4 items, the contents are in bold, meaning these are linked folders.
+- For each of these bold items, click on the ‘Down Arrow box’ when you select a line, then select ‘<Edit…>
+- For the popup window, you’ll see a value that links to ‘C:\Program Files\SA\MobileRobots\Aria…’ for the following list, change the file path to the path of your Aria installation, leaving the last folder value.
+  - For example, So ‘C:\Program Files\SA\MobileRobots\Aria\bin64’ should now be So ‘C:\Program Files\MobileRobots\Aria\bin64’
+- Do this for:
+  - Executable Directories
+  - Include Directories
+  - Library Directories
+  - Source Directories
+- Once that’s done, click OK and close all the properties windows.
+- Right click the project and ‘Build’ the solutions.
+- If no errors appear, run the solutions with ‘Local Windows Debugger’
+- The program should run and show the robot moving in the simulator!
