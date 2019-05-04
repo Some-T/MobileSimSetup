@@ -47,3 +47,6 @@ target_link_libraries() ??? to do the below?
 - Right click the project and ‘Build’ the solutions.
 - If no errors appear, run the solutions with ‘Local Windows Debugger’
 - The program should run and show the robot moving in the simulator!
+
+
+https://marketplace.visualstudio.com/items?itemName=DaisukeAtaraxiA.VSslnToCMakePlugin
