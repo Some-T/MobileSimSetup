@@ -13,3 +13,7 @@ list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
 
 
 find_package(ARIA)
+
+target_include_directories(CLion ${ARIA_INCLUDE_DIRS})
+
+target_link_libraries(CLion ${ARIA_LIBRARIES})

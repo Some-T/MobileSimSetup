@@ -60,3 +60,16 @@ ok, so that find module will define the following variables ARIA_FOUND, ARIA_INC
 it's an old style module, you'll have to manually call target_include_directories for include dirs, and target_link_libraries for libs
 
 so basically add similar directories to this file, as though I did above for visual studio project ARIA, and for the visual studio project ARIA itself.
+
+ yeah, as suspected, the find package command finds the library, you are just not doing anything with the variables it sets
+ 
+  ok, so that find module will define the following variables ARIA_FOUND, ARIA_INCLUDE_DIRS, ARIA_LIBRARIES
+  
+  Update `FindARIA.cmake` file to the following dynamics:
+  
+  https://cmake.org/cmake/help/latest/command/target_include_directories.html
+  
+  https://cmake.org/cmake/help/latest/command/target_link_libraries.html
+  
+  target_include_directories(yourexecutabletarget ${ARIA_INCLUDE_DIRS})
+  target_link_libraries(yourexecutabletarget ${ARIA_LIBRARIES})

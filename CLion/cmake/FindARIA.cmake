@@ -134,4 +134,3 @@ mark_as_advanced(
         ARIA_LIBRARY_RELEASE
         ARIA_LIB_SEARCH_PATH
 )
-
