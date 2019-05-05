@@ -3,4 +3,13 @@ project(CLion)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CLion main.cpp)
+add_executable(CLion
+        forward.cpp
+        forward.h
+        main.cpp
+        )
+
+list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
+
+
+find_package(ARIA)

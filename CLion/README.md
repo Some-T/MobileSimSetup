@@ -50,3 +50,13 @@ target_link_libraries() ??? to do the below?
 
 
 https://marketplace.visualstudio.com/items?itemName=DaisukeAtaraxiA.VSslnToCMakePlugin
+
+
+## Current state:
+
+Now in the file `FindARIA.cmake` do the below:
+
+ok, so that find module will define the following variables ARIA_FOUND, ARIA_INCLUDE_DIRS, ARIA_LIBRARIES
+it's an old style module, you'll have to manually call target_include_directories for include dirs, and target_link_libraries for libs
+
+so basically add similar directories to this file, as though I did above for visual studio project ARIA, and for the visual studio project ARIA itself.
