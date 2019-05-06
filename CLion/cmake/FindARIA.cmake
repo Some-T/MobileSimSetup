@@ -51,7 +51,7 @@ find_path(ARIA_INCLUDE_DIR Aria.h
         /usr/local/include/Aria
         "C:/Program Files/MobileRobots/Aria/include"
         )
-#MESSAGE("DBG ARIA_INCLUDE_DIR=${ARIA_INCLUDE_DIR}")
+MESSAGE("DBG ARIA_INCLUDE_DIR=${ARIA_INCLUDE_DIR}")
 
 if(UNIX)
     find_library(ARIA_LIBRARY
@@ -63,7 +63,7 @@ if(UNIX)
             /usr/lib
             /usr/local/lib
             )
-    #MESSAGE("DBG ARIA_LIBRARY=${ARIA_LIBRARY}")
+    MESSAGE("DBG ARIA_LIBRARY=${ARIARIA_INCLUDE_DIRSA_LIBRARY}")
 else()
     if(MSVC14)
         set(ARIA_SUFFIX_NAME VC14)
