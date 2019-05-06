@@ -73,3 +73,12 @@ so basically add similar directories to this file, as though I did above for vis
   
   target_include_directories(yourexecutabletarget ${ARIA_INCLUDE_DIRS})
   target_link_libraries(yourexecutabletarget ${ARIA_LIBRARIES})
+  
+  arguments are the expressions you pass a command to initialize its parameters
+  `CLion` and `${ARIA_INCLUDE_DIRS}` are the arguments given to `target_include_directories`
+   the docs for the command, specifying how many params it expects and where https://cmake.org/cmake/help/latest/command/target_include_directories.html
+   as per above docs I need to set `<INTERFACE|PUBLIC|PRIVATE>` somehow for 
+   
+   `target_include_directories(CLion ${ARIA_INCLUDE_DIRS})`
+   
+   `target_link_libraries(CLion ${ARIA_LIBRARIES})`
