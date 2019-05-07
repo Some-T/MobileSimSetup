@@ -82,3 +82,7 @@ so basically add similar directories to this file, as though I did above for vis
    `target_include_directories(CLion ${ARIA_INCLUDE_DIRS})`
    
    `target_link_libraries(CLion ${ARIA_LIBRARIES})`
+   
+   In conclusion I believe this version of ARIA that is in this repo, as in the setup files for windows and libraries for ARIA are all compiled towards the microsoft visual studio compiler,
+   this means that to run Aria using this CMake setup in Windows, in the CLion IDE or similar, I would need to recompile for its appropiate set compiler which in my case is GCC (https://nuwen.net/mingw.html)
+   Aria can be compiled from source for GCC for windows possibly from: https://github.com/reedhedges/AriaCoda
